@@ -12,16 +12,16 @@
     <div id="conteudo">
         <h2>Prezada Helena,</h2>
 
-        <h2>Espero que esta mensagem a encontre bem. Venho por meio desta solicitar sua gentil autorização para que o André possa participar de um encontro no bar cultural com seus amigos, marcado para esta noite.</h2>
+        <p>Espero que esta mensagem a encontre bem. Venho por meio desta solicitar sua gentil autorização para que o André possa participar de um encontro no bar cultural com seus amigos, marcado para esta noite.</p>
             
-        <h2>Entendo plenamente a importância do tempo que vocês dedicam um ao outro e o valor que atribuem aos momentos compartilhados. Por isso, quero assegurar-lhe que este pedido não tem a intenção de interferir nos compromissos e planos que vocês já estabeleceram juntos.</h2>
+        <p>Entendo plenamente a importância do tempo que vocês dedicam um ao outro e o valor que atribuem aos momentos compartilhados. Por isso, quero assegurar-lhe que este pedido não tem a intenção de interferir nos compromissos e planos que vocês já estabeleceram juntos.</p>
             
-        <h2>Saiba que o André está ansioso para este encontro e tem grande apreço pela sua compreensão e apoio. Sua autorização seria muito apreciada por ele e seus amigos.
-            Agradeço desde já sua atenção e aguardo sua resposta com otimismo.
-            Atenciosamente, Lucas Arouca
-        </h2>
-            
-        <div style="position: absolute; bottom: 50px; width: 100%; text-align: center;">
+        <p>Saiba que o André está ansioso para este encontro e tem grande apreço pela sua compreensão e apoio. Sua autorização seria muito apreciada por ele e seus amigos.</p>
+        
+        <p>Agradeço desde já sua atenção e aguardo sua resposta com otimismo.</p>
+        <p>Atenciosamente, Lucas Arouca</p>
+        
+        <div style="position: absolute; bottom: 5%; width: 100%; text-align: center;">
             <button onclick="sim()" class="btn">Eu deixo ele ir e vou fazer um pix de R$75,63 para ele aproveitar a noite = sou braba</button>
             <button onclick="desvia(this)" onmouseover="desvia(this)" class="btn">NÃO DEIXO!!!!!!!! = SOU CHATA</button>
         </div>
@@ -30,31 +30,12 @@
 <style>
     #conteudo {
         background: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
+        width: 90%;
+        margin: 0 auto; /* Centraliza o conteúdo */
         padding: 10px;
         text-align: center;
-        font-family: 'Segoe Script', cursive;;
-        overflow: hidden; /* Evita barra de rolagem */
-    }
-
-    .imagens {
-        display: flex;
-        justify-content: space-between; /* Espaço entre as imagens */
-        padding: 10px;
-        position: absolute;
-        top: 50%; /* Centraliza verticalmente */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translate(-50%, -50%); /* Centraliza as imagens */
-        width: 960px; /* Largura total das imagens */
-    }
-
-    .imagens img {
-        flex: 1; /* Distribui o espaço igualmente entre as imagens */
-        margin: 0 5px; /* Margem entre as imagens */
+        font-family: 'Segoe Script', cursive;
+        max-width: 960px; /* Define a largura máxima */
     }
 
     .btn {
@@ -62,7 +43,8 @@
         color: white;
         border: none;
         padding: 10px;
-        width: 320px;
+        width: 90%;
+        max-width: 400px; /* Largura máxima dos botões */
         border-radius: 12px;
         font-size: 18px;
         margin: 5px;
@@ -92,6 +74,33 @@
     /* Centraliza os h2 */
     h2 {
         text-align: center;
+    }
+
+    /* Estilo para parágrafos */
+    p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    /* Media queries para ajustar o layout em diferentes tamanhos de tela */
+    @media screen and (max-width: 768px) {
+        #conteudo {
+            width: 95%;
+        }
+
+        .btn {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #conteudo {
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+        }
     }
 </style>
 
